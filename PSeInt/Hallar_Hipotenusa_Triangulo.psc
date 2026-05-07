@@ -1,4 +1,4 @@
-Algoritmo Hallar_Hipotenusa
+Algoritmo Hallar_Hipotenusa_Triangulo
 	Escribir 'Fecha: ', FechaActual();
 	Escribir 'Hora: ', HoraActual();
 	Escribir 'Yeyson Yamir Leiva Romero';
