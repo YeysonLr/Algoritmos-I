@@ -1,0 +1,17 @@
+Algoritmo Area_Volumen_Paralelepipedo
+	// Definir variables
+	Definir largo, ancho, altura, area, volumen Como Real;
+	// Entrada de datos
+	Escribir "Ingrese el largo: ";
+	Leer largo;
+	Escribir "Ingrese el ancho: ";
+	Leer ancho;
+	Escribir "Ingrese la altura: ";
+	Leer altura;
+	// Proceso
+	area = 2 * ((largo * ancho) + (largo * altura) + (ancho * altura));
+	volumen = largo * ancho * altura;
+	// Salida de datos
+	Escribir "El área del paralelepípedo es: ", area;
+	Escribir "El volumen del paralelepípedo es: ", volumen;
+FinAlgoritmo
