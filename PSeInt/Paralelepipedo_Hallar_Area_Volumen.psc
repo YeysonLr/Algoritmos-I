@@ -1,4 +1,4 @@
-Algoritmo Area_Volumen_Paralelepipedo
+Algoritmo Paralelepipedo_Hallar_Area_Volumen
 	Escribir 'Fecha: ', FechaActual();
 	Escribir 'Hora: ', HoraActual();
 	Escribir 'Yeyson Yamir Leiva Romero';
