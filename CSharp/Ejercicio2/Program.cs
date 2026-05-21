@@ -49,9 +49,11 @@ namespace Ejercicio2
 
             if (promedio >= 12)
             {
+                Console.WriteLine($"Promedio: {promedio}");
                 Console.WriteLine("Estudiante APROBADO");
             }
             else {
+                Console.WriteLine($"Promedio: {promedio}");
                 Console.WriteLine("Estudiante DESAPROBADO");
             }
 
