@@ -1,0 +1,54 @@
+"""
+Algoritmo que pide horas trabajadas (máximo 8)
+y genera un día aleatorio (1 a 7) para calcular el pago
+"""
+
+import random
+from datetime import datetime
+
+# Fecha y hora
+print("Fecha:", datetime.now().date())
+print("Hora:", datetime.now().time())
+
+# Nombre
+print("Yeyson Yamir Leiva Romero")
+
+# Entrada de datos
+horas = float(input("\nIngrese el número de horas trabajadas (máximo 8): "))
+
+# Validación
+if horas >= 0 and horas <= 8:
+
+    # Generar día aleatorio
+    dia = random.randint(1, 7)
+
+    print(f"\nDía generado: {dia}")
+
+    # Determinar día y pago
+    if dia == 1:
+        print("Día: Lunes")
+        pago = horas * 30
+    elif dia == 2:
+        print("Día: Martes")
+        pago = horas * 25
+    elif dia == 3:
+        print("Día: Miércoles")
+        pago = horas * 30
+    elif dia == 4:
+        print("Día: Jueves")
+        pago = horas * 25
+    elif dia == 5:
+        print("Día: Viernes")
+        pago = horas * 30
+    elif dia == 6:
+        print("Día: Sábado")
+        pago = horas * 25
+    elif dia == 7:
+        print("Día: Domingo")
+        pago = 0
+        print("No se trabaja domingo")
+
+    print(f"Pago del día: S/. {pago}")
+
+else:
+    print("Error: las horas deben ser entre 0 y 8")

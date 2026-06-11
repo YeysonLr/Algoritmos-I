@@ -1,0 +1,31 @@
+"""
+Algoritmo que genera un número aleatorio entre 1 y 5
+y muestra el premio correspondiente
+"""
+
+import random
+from datetime import datetime
+
+# Mostrar fecha y hora
+print("Fecha:", datetime.now().date())
+print("Hora:", datetime.now().time())
+
+# Mostrar nombre
+print("Yeyson Yamir Leiva Romero")
+
+# Generar número aleatorio entre 1 y 5
+numero = random.randint(1, 5)
+
+print(f"\nNúmero obtenido: {numero}")
+
+# Determinar el premio
+if numero == 1:
+    print("Premio: 0 soles")
+elif numero == 2:
+    print("Premio: 5 soles")
+elif numero == 3:
+    print("Premio: 10 soles")
+elif numero == 4:
+    print("Premio: 20 soles")
+elif numero == 5:
+    print("Premio: 50 soles")

@@ -1,0 +1,32 @@
+"""
+Algoritmo que encuentra el número menor entre 4 números
+"""
+
+from datetime import datetime
+
+# Mostrar fecha y hora
+print("Fecha:", datetime.now().date())
+print("Hora:", datetime.now().time())
+
+# Mostrar nombre
+print("Yeyson Yamir Leiva Romero")
+
+# Ingresar 4 números
+num1 = float(input("\nIngrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+num3 = float(input("Ingrese el tercer número: "))
+num4 = float(input("Ingrese el cuarto número: "))
+
+# Suponer que el primero es el menor
+menor = num1
+
+# Comparaciones
+if num2 < menor:
+    menor = num2
+if num3 < menor:
+    menor = num3
+if num4 < menor:
+    menor = num4
+
+# Resultado
+print("\nEl número menor es:", menor)

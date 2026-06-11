@@ -1,0 +1,37 @@
+"""
+Algoritmo que calcula el valor de r según la relación:
+r = (a * b) / (c * d)   si p * q > 0
+r = (a + b) / (c + d)   si p * q = 0
+r = (a + b) - c + d     si p * q < 0
+"""
+
+from datetime import datetime
+
+# Mostrar fecha y hora
+print("Fecha:", datetime.now().date())
+print("Hora:", datetime.now().time())
+
+# Mostrar nombre
+print("Yeyson Yamir Leiva Romero")
+
+# Ingreso de datos
+a = float(input("\nIngrese a: "))
+b = float(input("Ingrese b: "))
+c = float(input("Ingrese c: "))
+d = float(input("Ingrese d: "))
+p = float(input("Ingrese p: "))
+q = float(input("Ingrese q: "))
+
+# Calcular producto
+producto = p * q
+
+# Determinar r según la condición
+if producto > 0:
+    r = (a * b) / (c * d)
+elif producto == 0:
+    r = (a + b) / (c + d)
+else:
+    r = (a + b) - c + d
+
+# Mostrar resultado
+print("\nEl valor de r es:", r)
